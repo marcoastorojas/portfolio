@@ -1,6 +1,11 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import css from "../assets/img/css.png";
+import html from "../assets/img/html.png";
+import mongo from "../assets/img/mongo.png";
+import node from "../assets/img/node.png";
+import postgresql from "../assets/img/postgresql.png";
+import angular from "../assets/img/angular.png";
+import git from "../assets/img/git.png";
+import react from "../assets/img/react.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -35,24 +40,33 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Algunas de las tecnologías que manejo y utilizo en mi dia a dia:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={angular} alt="Image" />
+                                <h5>Angular</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={react} alt="Image" />
+                                <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={node} alt="Image" />
+                                <h5>Nodejs</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={git} alt="Image" />
+                                <h5>Git</h5>
                             </div>
+                            <div className="item">
+                                <img src={postgresql} alt="Image" />
+                                <h5>Postgresql</h5>
+                            </div>
+                            <div className="item">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Image" />
+                                <h5>Typescript</h5>
+                            </div>
+                            
                         </Carousel>
                     </div>
                 </div>

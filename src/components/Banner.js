@@ -11,12 +11,12 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ ];
   const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      tick();
+      // tick();
     }, delta);
 
     return () => { clearInterval(ticker) };
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Bienvenido a mi Portafolio</span>
+                <h1>{`Hola! soy Marco Full Stack developer`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Soy desarollador web con experiencia trabajando tanto en el frontend, como en el backend. Me especializo en crear aplicaciones robustas y puedo trabajar tanto en el código del lado del cliente como el del servidor. Me considero una persona muy comprometida y abierta a aprender nuevas tecnologias.Tengo experiencia creando aplicaciones web con JavaScript, React, NodeJs, Angular, SQL, MongoDB.</p>
+                  {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
