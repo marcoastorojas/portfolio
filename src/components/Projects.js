@@ -1,9 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-1.jpeg";
-import projImg2 from "../assets/img/project-2.jpeg";
-import projImg3 from "../assets/img/project-img3.png";
+import food2 from "../assets/img/food2.jpeg";
+import food from "../assets/img/food.jpeg";
+import alkemy from "../assets/img/alkemy.jpeg";
+import ecommerce from "../assets/img/ecommerce.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import placeholder from "../assets/img/placeholder.png"
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -13,15 +16,15 @@ export const Projects = () => {
     {
       title: "Plus Hardware",
       description: "Proyecto full stack ecommerce soy henry React, Nodejs, crum, Git, React, Postgresql, Nodejs, Express",
-      imgUrl: projImg2,
+      imgUrl: ecommerce,
       github: "https://github.com/marcoastorojas/pf-ecommerce",
       deploy: "https://pf-ecommerce.onrender.com/",
-      video: ""
+      video: "https://www.youtube.com/watch?v=75p9ft-uoWw"
     },
     {
       title: "Billetera Digital",
       description: "Proyecto Alkemy  Frontend aplicacion Billetera Digital uso de Reactive Forms, Guards, Graficas, etc",
-      imgUrl: projImg1,
+      imgUrl: alkemy,
       deploy: "https://skillup-alkemy.netlify.app",
       github: "https://github.com/marcoastorojas/Skill-Up-Angular",
       video: "https://drive.google.com/file/d/1dTtbFIHNy2lcSYKZhNTNDh6nU9JwMdqK/view"
@@ -29,7 +32,7 @@ export const Projects = () => {
     {
       title: "FoodApp",
       description: "Proyecto individual FullStack (Nodejs,React), aplicacion para obtener recetas de platos segun sus dietas, healtScore y tiempos de preparacion.",
-      imgUrl: projImg3,
+      imgUrl: food,
       github: "https://github.com/marcoastorojas/food",
       deploy: "https://app-food-henry.onrender.com/",
       video: ""
@@ -37,7 +40,7 @@ export const Projects = () => {
     {
       title: "A la carta",
       description: "Aplicacion Angular para elegir un menu y ver sus caracteristicas, promedios, etc",
-      imgUrl: projImg1,
+      imgUrl: food2,
       deploy: "https://alkemy-alacarta.netlify.app/",
       github: "https://github.com/marcoastorojas/a-la-carta",
       video: ""
@@ -45,15 +48,15 @@ export const Projects = () => {
     {
       title: "MovieApp",
       description: "Proyecto personal FullStack (Nodejs,Angular), Aplicacion de streaming de peliculas y series, en progreso...",
-      imgUrl: projImg3,
+      imgUrl: placeholder,
       github: "https://github.com/marcoastorojas/movieApp",
       deploy: "",
       video: ""
     },
     {
       title: "HospitalApp",
-      description: "Proyecto Individual en progreso...",
-      imgUrl: projImg3,
+      description: "Proyecto personal en progreso...",
+      imgUrl: placeholder,
       github: "https://github.com/marcoastorojas/app-hospital.github.io",
       deploy: "",
       video: ""
@@ -69,7 +72,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -98,10 +101,8 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
